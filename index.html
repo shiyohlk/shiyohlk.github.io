@@ -1,154 +1,220 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="最新技術と自然との調和を目指す">
-<meta name="viewport" content="width=device-width">
-<title>World Silver | ワールドシルバー</title>
-<link rel="stylesheet" media="all" href="css/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script src="js/script.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Fontawsome-->
+	<script src="https://kit.fontawesome.com/006341a921.js" crossorigin="anonymous"></script>
+	<!--BootstrapのCSS読み込み-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--jQuery読み込み-->
+	<script src="js/jquery.js"></script>
+	<!--BootstrapのJSSの読み込み-->
+	<script src="js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+	body{
+		font-family : ヒラギノ明朝 ProN;
+		font-size:12pt;
+	}
+	.mainSection{
+		padding-left:60px;
+		padding-right:60px;
+	}
+	#footer{
+		width:100%;
+		padding:2px;
+		background-color: grey;
+		text-align: center;
+	}
+	.homeBar{
+		position: relative;
+		background-color: rgb(0,42,5,0.4);
+	}
+	.ImgBar,.mainMsg{
+		text-align: center;
+	}
+	.mainMsg{
+		color:#666666;
+		font-size:15pt;
+		margin:60px;
+	}
+	.mainTitle{
+		color:#42210B;
+		text-stroke: 0.1px #fff;
+		-webkit-text-stroke: 0.1px #fff;
+		background-color: rgb(255,255,255,0.5);
+		writing-mode: vertical-rl;
+		position:absolute;
+		top:5%;
+		left:7%;
+		font-size:36pt;
+	}
+	.clearfloat{
+		clear:both;
+	}
+	.subSec,.subSec2{
+		position: relative;
+		height:auto;
+	}
+	.subImg{
+		height:250px;
+		position: absolute;
+		top:30px;
+	}
+	.subSec .imgBg{
+		float:left;
+		height:300px;
+		background-color: #DFD8D7;
+		width:30%;
+	}
+	.subSec .txtSec{
+		color:#666666;
+		padding: 100px;
+		text-align: center;
+		font-size: 25pt;
+		float:right;
+		height:300px;
+		width:70%;
+		background-color: #FBFAFD;
+	}
+	.subSec .txtSec p{
+		text-decoration: underline;
+	}
+	.subSec .intro{
+		font-size:10pt;
+		margin-top:50px;
+	}
+	.subSec2 .subImg{
+		right:0px;
+	}
+	.subSec2 .imgBg{
+		float:right;
+		height:300px;
+		background-color: #DFD8D7;
+		width:30%;
+	}
+	.subSec2 .txtSec{
+		color:#666666;
+		padding: 100px;
+		text-align: center;
+		font-size: 25pt;
+		float:left;
+		height:300px;
+		width:70%;
+		background-color: #FBFAFD;
+	}
+	.subSec2 .txtSec p{
+		text-decoration: underline;
+	}
+	.subSec2 .intro{
+		font-size:10pt;
+		margin-top:50px;
+	}
+	 /*PC:ウィンドウ幅が767px以上の場合に適用*/
+	@media screen and (min-width: 767px) {
+		body {
+		}
+	}
+	/*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
+	@media screen and (max-width: 479px) {
+	}
+
+	</style>
+
 </head>
 
+
 <body>
-
-<nav id="mainnav">
-	<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
-	<div class="panel">
-		<ul>
-			<li><a href="#header">TOP</a></li>
-			<li><a href="#sec01">VISION</a></li>
-			<li><a href="#sec02">MESSAGE</a></li>
-			<li><a href="#sec03">SERVICE</a></li>
-			<li><a href="#sec04">STORY</a></li>
-			<li><a href="#sec05">PROFILE</a></li>
-		</ul>
-	</div>
-</nav>
-
-<header id="header">
-	<img src="images/mainImg.jpg" alt="">
-	<div id="slogan">
-		<h1>World Silver</h1>
-		<h2>ワールドシルバー株式会社</h2>
-	</div>
-</header>
-
-<!-- VISION -->
-<section id="sec01">
-	<header>
-		<h2>VISION</h2>
-	</header>
-	<div class="vision">
-		ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいうには及ばないはずである。上にいったようなことがらについては、曖昧あいまいな態度をとり、または真実でない知識を強いて注入していたことも、明かな事実である。
-	</div>
-</section>
-<!-- // VISION -->
-
-<!-- MESSAGE -->
-<section id="sec02">
-	<div class="wrap">
-		<p class="bg"><img src="images/sec02_01.jpg" alt=""></p>
-		<div class="txt">
-			<div class="vMid">
-				<h2>MESSAGE</h2>
-				<p>ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいう。</p>
-			</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+	    <img src="images/logo.png" height="30" alt="">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">ホーム <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">ボタニカル染めとは</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          OEM生産
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">扱う染料について</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Mysunbioについて</a>
+				</li>
+	    </ul>
+	  </div>
+	</nav>
+	<div class="mainSection">
+	<div class="homeBar">
+		<div class="ImgBar">
+			<img class="mainImg"src="images/main_img.png">
+		</div>
+		<div class="mainTitle">
+			ボタニカル染め
 		</div>
 	</div>
-	<div id="sec02_02" class="wrap">
-		<p class="bg"><img src="images/sec02_02.jpg" alt=""></p>
-		<div class="txt">
-			<div class="vMid">
-				<h2>MESSAGE</h2>
-				<p>日本歴史の科学的研究ということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいう。</p>
-			</div>
+	<div class="mainMsg">
+		<p>人に優しい</p>
+		<p>水に害を与えない</p>
+		<p>空気に害を与えない</p>
+		<p>地球環境に優しい<span style="text-decoration:underline">BOTANICAL  MSB NATURAL DYE</span></p>
+	</div>
+	<div class="subSec">
+		<div class="imgBg"></div>
+		<div class="txtSec">
+			<p>ボタニカル染めとは</p>
+			<div class="intro">多品種の植物染料を使用することで希望色に近い表現ができます</div>
 		</div>
+		<div class="clearfloat"></div>
+		<img class="subImg" src="images/botanical_link.png">
+		<div class="clearfloat"></div>
 	</div>
-</section>
-<!-- // MESSAGE -->
-
-<!-- SERVICE -->
-<section id="sec03">
-	<div class="inner">
-		<ul class="col3">
-			<li>
-				<h2>SERVICE</h2>
-				<img src="images/circleImg01.png" width="288" height="288" alt="">
-				<p>科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいう。</p>
-			</li>
-			<li>
-				<h2>MESSAGE</h2>
-				<img src="images/circleImg02.png" width="288" height="288" alt="">
-				<p>日本歴史の科学的研究ということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば意義であるならば。</p>
-			</li>
-			<li>
-				<h2>STORY</h2>
-				<img src="images/circleImg03.png" width="288" height="288" alt="">
-				<p>科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいう。</p>
-			</li>
-		</ul>
+	<div class="subSec2">
+		<div class="imgBg"></div>
+		<div class="txtSec">
+			<p>注文方法</p>
+			<div class="intro">
+				ご要望から注文・試作・納品までの流れについて解説いたします</div>
+		</div>
+		<div class="clearfloat"></div>
+		<img class="subImg" src="images/order_link.png">
+		<div class="clearfloat"></div>
 	</div>
-</section>
-<!-- // SERVICE -->
-
-<!-- STORY -->
-<section id="sec04">
-	<div class="inner">
-		<ul class="col2">
-			<li>
-				<h2>STORY</h2>
-				<p>科学的研究というのが近代史学の学問的方法によるちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれている。研究という意義であるならば、研究という意義であるならばこれは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいうには及ばないはずである。</p>
-			</li>
-			<li>
-				<h2>SUCCESS</h2>
-				<p>ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれているということがしきりに叫ばれている。科学的研究というのが近代史学の学問的方法による研究という意義であるならば、これは史学の学徒の間においては一般に行われていることであるから、今さらこと新しくいうには及ばないはずである。</p>
-			</li>
-		</ul>
+	<div class="subSec">
+		<div class="imgBg"></div>
+		<div class="txtSec">
+			<p>加工紹介</p>
+			<div class="intro">染めの加工方法についてご紹介いたします</div>
+		</div>
+		<div class="clearfloat"></div>
+		<img class="subImg" src="images/process_link.png">
+		<div class="clearfloat"></div>
 	</div>
-</section>
-<!-- // STORY -->
+</div>
 
-<!-- PROFILE -->
-<section id="sec05">
-	<header>
-		<h2>PROFILE</h2>
-	</header>
-	<div class="inner">
-		<ul class="col2">
-			<li>
-				<dl>
-					<dt>社名</dt>
-					<dd>Sample Company</dd>
-					<dt>代表取締役</dt>
-					<dd>見本 太郎</dd>
-					<dt>住所</dt>
-					<dd>見本県見本市仮区見本町1-3-5</dd>
-					<dt>電話番号</dt>
-					<dd>01234-567-8901</dd>
-					<dt>設立</dt>
-					<dd>20XX年5月5日</dd>
-					<dt>資本金</dt>
-					<dd>1,000,000円</dd>
-					<dt>主な取引先</dt>
-					<dd><p><a href="#" target="_blank">見本商事株式会社</a></p><p><a href="#" target="_blank">株式会社年中無休商事</a></p><p><a href="#" target="_blank">株式会社仮称</a></p></dd>
-				</dl>
-			</li>
-			<li>
-				<div id="map">
-					<!-- GOOGLE MAP -->
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.5937927089367!2d136.92980931491988!3d36.70829797996758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff781ec5af4ca3f%3A0x2ade3e8e4c2801b8!2z56aP5bKh6aeF!5e0!3m2!1sja!2sus!4v1478313402186" allowfullscreen></iframe>
-					<!-- // GOOGLE MAP -->
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
-<!-- // PROFILE -->
 
-<footer id="footer">
-	Copyright(c) 20XX Sample Inc. All Rights Reserved. Design by <!-- ←クレジット表記を外す場合はシリアルキーが必要です http://f-tpl.com/credit/ -->
-</footer>
+
+<!--	<footer id="footer" class="bg-light">
+		Copyright(c) 2020 WorldSilver.
+	</footer>-->
 
 </body>
 </html>
