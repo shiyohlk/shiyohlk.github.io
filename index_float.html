@@ -1,0 +1,256 @@
+<!doctype html>
+
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Fontawsome-->
+	<script src="https://kit.fontawesome.com/006341a921.js" crossorigin="anonymous"></script>
+	<!--BootstrapのCSS読み込み-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--jQuery読み込み-->
+	<script src="js/jquery.js"></script>
+	<!--BootstrapのJSSの読み込み-->
+	<script src="js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+	body{
+		font-family : ヒラギノ明朝 ProN;
+		font-size:12pt;
+	}
+	a,a:visited a:active{
+		color:inherit;
+	}
+	#footer{
+		width:100%;
+		padding:2px;
+		background-color: grey;
+		text-align: center;
+	}
+	.clearfloat{
+		clear:both;
+	}
+	.homeBar{
+		position: relative;
+		background-color: rgb(0,42,5,0.4);
+	}
+	.mainTitle{
+		writing-mode: vertical-rl;
+		color:#42210B;
+		text-stroke: 0.1px #fff;
+		-webkit-text-stroke: 0.1px #fff;
+		background-color: rgb(255,255,255,0.5);
+		position:absolute;
+		top:5%;
+		left:7%;
+	}
+	.ImgBar,.mainMsg{
+		text-align: center;
+	}
+	.txt{
+		width:100%;
+		padding-left: 200px;
+	}
+	.link{
+		text-decoration: underline;
+	}
+	 /*PC:ウィンドウ幅が767px以上の場合に適用*/
+	@media screen and (min-width: 767px) {
+		.mainSection{
+			padding-left:60px;
+			padding-right:60px;
+		}
+
+		.mainMsg{
+			color:#666666;
+			font-size:15pt;
+			margin:60px;
+		}
+		.mainTitle{
+		font-size:36pt;
+		}
+		.subSec,.subSec2{
+			position: relative;
+			height:auto;
+		}
+		.subImg{
+			height:250px;
+			position: absolute;
+			top:30px;
+		}
+		.subSec .imgBg{
+			float:left;
+			height:300px;
+			background-color: #DFD8D7;
+			width:30%;
+		}
+		.subSec .txtSec{
+			color:#666666;
+			padding-top: 100px;
+			text-align: center;
+			font-size: 25pt;
+			float:right;
+			height:300px;
+			width:70%;
+			background-color: #FBFAFD;
+		}
+		.subSec .intro{
+			font-size:10pt;
+			margin-top:50px;
+		}
+		.subSec2 .subImg{
+			right:0px;
+		}
+		.subSec2 .imgBg{
+			float:right;
+			height:300px;
+			background-color: #DFD8D7;
+			width:30%;
+		}
+		.subSec2 .txtSec{
+			color:#666666;
+			padding: 100px;
+			text-align: center;
+			font-size: 25pt;
+			float:left;
+			height:300px;
+			width:70%;
+			background-color: #FBFAFD;
+		}
+		.subSec2 .txtSec p{
+			text-decoration: underline;
+		}
+		.subSec2 .intro{
+			font-size:10pt;
+			margin-top:50px;
+		}
+	}
+	/*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
+	@media screen and (max-width: 479px){
+		.mainSection{
+			padding-left:20px;
+			padding-right:20px;
+		}
+		.mainSection img{
+			width:100%;
+			height:auto;
+		}
+		.homeBar img{
+			width:80%;
+			height:auto;
+		}
+		.mainTitle{
+			font-size:15pt;
+		}
+
+
+	}
+
+	</style>
+
+</head>
+
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+	    <img src="images/logo.png" height="30" alt="">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">ホーム <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">ボタニカル染めとは</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          OEM生産
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">扱う染料について</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Mysunbioについて</a>
+				</li>
+	    </ul>
+	  </div>
+	</nav>
+	<div class="mainSection">
+		<div class="homeBar">
+			<div class="ImgBar">
+				<img class="mainImg"src="images/main_img.png">
+			</div>
+			<div class="mainTitle">
+				ボタニカル染め
+			</div>
+		</div>
+		<div class="mainMsg">
+			<p>人に優しい</p>
+			<p>水に害を与えない</p>
+			<p>空気に害を与えない</p>
+			<p>地球環境に優しい<span style="text-decoration:underline">BOTANICAL  MSB NATURAL DYE</span></p>
+		</div>
+		<div class="subSec">
+			<div class="imgBg"></div>
+			<div class="txtSec">
+				<div class="txt link"><a href="#">ボタニカル染めとは</a></div>
+				<div class="txt intro">多品種の植物染料を使用することで希望色に近い表現ができます</div>
+			</div>
+			<div class="clearfloat"></div>
+			<img class="subImg" src="images/botanical_link.png">
+			<div class="clearfloat"></div>
+		</div>
+		<div class="subSec">
+			<div class="imgBg"></div>
+			<div class="txtSec">
+				<div class="txt link"><a href="#">ボタニカル染めとは</a></div>
+				<div class="txt intro">多品種の植物染料を使用することで希望色に近い表現ができます</div>
+			</div>
+			<div class="clearfloat"></div>
+			<img class="subImg" src="images/botanical_link.png">
+			<div class="clearfloat"></div>
+		</div>
+		<div class="subSec2">
+			<div class="imgBg"></div>
+			<div class="txtSec">
+				<p>注文方法</p>
+				<div class="intro">
+					ご要望から注文・試作・納品までの流れについて解説いたします</div>
+			</div>
+			<div class="clearfloat"></div>
+			<img class="subImg" src="images/order_link.png">
+			<div class="clearfloat"></div>
+		</div>
+		<div class="subSec">
+			<div class="imgBg"></div>
+			<div class="txtSec">
+				<p>加工紹介</p>
+				<div class="intro">染めの加工方法についてご紹介いたします</div>
+			</div>
+			<div class="clearfloat"></div>
+			<img class="subImg" src="images/process_link.png">
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+
+
+
+<!--	<footer id="footer" class="bg-light">
+		Copyright(c) 2020 WorldSilver.
+	</footer>-->
+
+</body>
+</html>

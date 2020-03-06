@@ -1,0 +1,66 @@
+body{
+  font-family : ヒラギノ明朝 ProN;
+  font-size:12pt;
+}
+a,a:visited a:active{
+  color:inherit;
+}
+#footer{
+  width:100%;
+  padding:2px;
+  background-color: grey;
+  text-align: center;
+}
+.homeBar{
+  position: relative;
+  background-color: rgb(0,42,5,0.4);
+}
+.mainTitle{
+  font-size:36pt;
+  writing-mode: vertical-rl;
+  color:#42210B;
+  text-stroke: 0.1px #fff;
+  -webkit-text-stroke: 0.1px #fff;
+  background-color: rgb(255,255,255,0.5);
+  position:absolute;
+  top:5%;
+  left:7%;
+}
+.ImgBar,.mainMsg{
+  text-align: center;
+}
+.mainMsg{
+  color:#666666;
+  padding:60px;
+  font-size:15pt;
+}
+.link{
+  text-decoration: underline;
+}
+.subSection{
+  display:flex;
+  align-items: center;
+}
+.txtSec{
+  text-align: center;
+  margin:auto;
+}
+.txt{
+ font-size:20pt;
+ color:#666666;
+}
+.intro{
+  font-size:12pt;
+}
+/*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
+@media screen and (max-width: 479px){
+
+
+}
+/*PC:ウィンドウ幅が767px以上の場合に適用*/
+@media screen and (min-width: 767px) {
+  .mainSection{
+    margin:0px 40px 0 40px;
+  }
+
+}

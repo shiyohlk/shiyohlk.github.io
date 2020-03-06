@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
@@ -13,115 +14,7 @@
 	<!--BootstrapのJSSの読み込み-->
 	<script src="js/bootstrap.min.js"></script>
 
-	<style type="text/css">
-	body{
-		font-family : ヒラギノ明朝 ProN;
-		font-size:12pt;
-	}
-	.mainSection{
-		padding-left:60px;
-		padding-right:60px;
-	}
-	#footer{
-		width:100%;
-		padding:2px;
-		background-color: grey;
-		text-align: center;
-	}
-	.homeBar{
-		position: relative;
-		background-color: rgb(0,42,5,0.4);
-	}
-	.ImgBar,.mainMsg{
-		text-align: center;
-	}
-	.mainMsg{
-		color:#666666;
-		font-size:15pt;
-		margin:60px;
-	}
-	.mainTitle{
-		color:#42210B;
-		text-stroke: 0.1px #fff;
-		-webkit-text-stroke: 0.1px #fff;
-		background-color: rgb(255,255,255,0.5);
-		writing-mode: vertical-rl;
-		position:absolute;
-		top:5%;
-		left:7%;
-		font-size:36pt;
-	}
-	.clearfloat{
-		clear:both;
-	}
-	.subSec,.subSec2{
-		position: relative;
-		height:auto;
-	}
-	.subImg{
-		height:250px;
-		position: absolute;
-		top:30px;
-	}
-	.subSec .imgBg{
-		float:left;
-		height:300px;
-		background-color: #DFD8D7;
-		width:30%;
-	}
-	.subSec .txtSec{
-		color:#666666;
-		padding: 100px;
-		text-align: center;
-		font-size: 25pt;
-		float:right;
-		height:300px;
-		width:70%;
-		background-color: #FBFAFD;
-	}
-	.subSec .txtSec p{
-		text-decoration: underline;
-	}
-	.subSec .intro{
-		font-size:10pt;
-		margin-top:50px;
-	}
-	.subSec2 .subImg{
-		right:0px;
-	}
-	.subSec2 .imgBg{
-		float:right;
-		height:300px;
-		background-color: #DFD8D7;
-		width:30%;
-	}
-	.subSec2 .txtSec{
-		color:#666666;
-		padding: 100px;
-		text-align: center;
-		font-size: 25pt;
-		float:left;
-		height:300px;
-		width:70%;
-		background-color: #FBFAFD;
-	}
-	.subSec2 .txtSec p{
-		text-decoration: underline;
-	}
-	.subSec2 .intro{
-		font-size:10pt;
-		margin-top:50px;
-	}
-	 /*PC:ウィンドウ幅が767px以上の場合に適用*/
-	@media screen and (min-width: 767px) {
-		body {
-		}
-	}
-	/*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
-	@media screen and (max-width: 479px) {
-	}
-
-	</style>
+	<link rel="stylesheet" href="css/main.css"
 
 </head>
 
@@ -163,52 +56,42 @@
 	  </div>
 	</nav>
 	<div class="mainSection">
-	<div class="homeBar">
-		<div class="ImgBar">
-			<img class="mainImg"src="images/main_img.png">
+		<div class="homeBar">
+			<div class="ImgBar">
+				<img class="mainImg"src="images/main_img.png">
+			</div>
+			<div class="mainTitle">
+				ボタニカル染め
+			</div>
 		</div>
-		<div class="mainTitle">
-			ボタニカル染め
+		<div class="mainMsg">
+			<p>人に優しい</p>
+			<p>水に害を与えない</p>
+			<p>空気に害を与えない</p>
+			<p>地球環境に優しい<span style="text-decoration:underline">BOTANICAL  MSB NATURAL DYE</span></p>
+		</div>
+		<div class="subSection">
+			<img class="subImg" src="images/bota_link.png">
+			<div class="txtSec">
+				<div class="txt link"><a href="#">ボタニカル染めとは</a></div>
+				<div class="txt intro">多品種の植物染料を使用することで希望色に近い表現ができます</div>
+			</div>
+		</div>
+		<div class="subSection">
+			<div class="txtSec">
+				<div class="txt link"><a href="#">注文方法</a></div>
+				<div class="txt intro">ご要望から注文・試作・納品までの流れについて解説いたします</div>
+			</div>
+			<img class="subImg" src="images/order_link.png">
+		</div>
+		<div class="subSection">
+			<img class="subImg" src="images/process_link.png">
+			<div class="txtSec">
+				<div class="txt link"><a href="#">加工方法</a></div>
+				<div class="txt intro">染めの加工方法についてご紹介いたします</div>
+			</div>
 		</div>
 	</div>
-	<div class="mainMsg">
-		<p>人に優しい</p>
-		<p>水に害を与えない</p>
-		<p>空気に害を与えない</p>
-		<p>地球環境に優しい<span style="text-decoration:underline">BOTANICAL  MSB NATURAL DYE</span></p>
-	</div>
-	<div class="subSec">
-		<div class="imgBg"></div>
-		<div class="txtSec">
-			<p>ボタニカル染めとは</p>
-			<div class="intro">多品種の植物染料を使用することで希望色に近い表現ができます</div>
-		</div>
-		<div class="clearfloat"></div>
-		<img class="subImg" src="images/botanical_link.png">
-		<div class="clearfloat"></div>
-	</div>
-	<div class="subSec2">
-		<div class="imgBg"></div>
-		<div class="txtSec">
-			<p>注文方法</p>
-			<div class="intro">
-				ご要望から注文・試作・納品までの流れについて解説いたします</div>
-		</div>
-		<div class="clearfloat"></div>
-		<img class="subImg" src="images/order_link.png">
-		<div class="clearfloat"></div>
-	</div>
-	<div class="subSec">
-		<div class="imgBg"></div>
-		<div class="txtSec">
-			<p>加工紹介</p>
-			<div class="intro">染めの加工方法についてご紹介いたします</div>
-		</div>
-		<div class="clearfloat"></div>
-		<img class="subImg" src="images/process_link.png">
-		<div class="clearfloat"></div>
-	</div>
-</div>
 
 
 
