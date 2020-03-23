@@ -4,6 +4,7 @@ html{
 body{
   font-family : ヒラギノ明朝 ProN;
   font-size:12pt;
+  color:#666666;
 }
 a,a:visited a:active{
   color:inherit;
