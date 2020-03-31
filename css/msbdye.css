@@ -9,8 +9,8 @@
 .homeBar{
   position: relative;
   background-color: rgb(237,240,224,0.5);
-
 }
+
 .mainTitle{
   position:absolute;
   top:35%;
@@ -48,7 +48,7 @@ ul.sublist {
 }
 ul.susublist{
 list-style-image: none;
-  list-style-type: decimal;
+list-style-type: decimal;
 }
  /*ul li{
   padding-top:10px;
@@ -73,7 +73,7 @@ list-style-image: none;
   padding:20px 40px 20px 40px;
 }
 .color3{
-  background-color: #d4ddd7;
+  background-color: #e9e9f0;
 }
 .color3 .description{
     padding:10px 0px 10px 60px;

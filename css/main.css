@@ -24,7 +24,7 @@ a,a:visited a:active{
 /*PC:ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 767px) {
   .mainSection{
-    margin:0px 95px 0 95px;
+    margin:0px 250px 0 250px;
   }
 
 }
