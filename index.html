@@ -11,10 +11,41 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--jQuery読み込み-->
 	<script src="js/jquery.js"></script>
+
+	<!-- jQuery UI -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<!--<script scr="js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">-->
+
 	<!--BootstrapのJSSの読み込み-->
 	<script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/index.css">
+
+	<!--effect -->
+	<script type="text/javascript">
+		$(function(){
+
+			//scroll
+			$(window).scroll(function() {
+			  let scrollTop = $(window).scrollTop(); // スクロール上部の位置
+			  let areaTop = $(".mainMsg").offset().top; // 対象エリアの上部の位置
+			  let areaBottom = areaTop + $(".mainMsg").innerHeight(); // 対象エリアの下部の位置
+				console.log(areaTop);
+				console.log(scrollTop);
+			  if (scrollTop > areaTop && scrollTop < areaBottom) {
+					console.log("is in");
+					$(".slide").show("slide");
+			    $(".mainMsg").addClass("is-in"); // スクロールが対象エリアに入った場合
+			  } else {
+			    //$(".mainMsg").removeClass("is-in"); // スクロールが対象エリアから出ている場合
+			  }
+			});
+		});
+	</script>
 
 	<title>WorldSilver-ボタニカル染め</title>
 
@@ -69,30 +100,30 @@
 			</div>
 		</div>
 		<div class="mainMsg">
-			<p>人に優しい</p>
-			<p>水に害を与えない</p>
+			<p class="slide">人に優しい</p>
+			<p class="slide">水に害を与えない</p>
 			<p>空気に害を与えない</p>
 			<p>地球環境に優しい<span class="link pad">BOTANICAL  MSB NATURAL DYE</span></p>
 		</div>
 		<div class="subSection">
 			<img src="images/bota_link.png">
 			<div class="txtSec">
-				<div class="txt link"><a href="#">ボタニカル染めとは</a></div>
+				<div class="txt link"><a href="msbdye.html">Botanical MSB Natrual Dyeとは</a></div>
 				<div class="txt intro">多品種の植物染料を使用することで希望色に近い表現ができます</div>
 			</div>
 		</div>
 		<div class="subSection">
 			<div class="txtSec order">
-				<div class="txt link"><a href="#">ご依頼方法</a></div>
-				<div class="txt intro">ご要望から注文・試作・納品までの流れについて解説いたします</div>
+				<div class="txt link"><a href="oem.html#oemflow">ご依頼の流れ</a></div>
+				<div class="txt intro">OEM取引の流れついて解説いたします</div>
 			</div>
 			<img class="img-order" src="images/order_link.png">
 		</div>
 		<div class="subSection">
 			<img src="images/process_link.png">
 			<div class="txtSec">
-				<div class="txt link"><a href="#">加工方法</a></div>
-				<div class="txt intro">染めの加工方法についてご紹介いたします</div>
+				<div class="txt link"><a href="oem.html">OEM サービス</a></div>
+				<div class="txt intro">提供しているOEMサービスを紹介いたします</div>
 			</div>
 		</div>
 	</div>

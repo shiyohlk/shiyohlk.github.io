@@ -21,6 +21,8 @@
 .link{
   text-decoration: underline;
 }
+.is-in{
+}
 .txtSec{
   text-align: center;
   margin:auto;
@@ -30,7 +32,15 @@
 }
 /*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px){
-  img{
+  .mainSection img:not(.mainImg){
+    height:auto;
+    width:50%;
+  }
+  .slide{
+    display:none;
+  }
+
+  .mainImg{
     height:auto;
     width:100%;
   }
@@ -48,14 +58,14 @@
   .txtSec{
     padding:20px 10px 20px 10px ;
   }
-  .img-order{
+  /*.img-order{
     position: relative;
     bottom:105px;
   }
   .order{
     position: relative;
     top:220px;
-  }
+  }*/
   .txt {
     font-size:16pt;
   }
@@ -64,6 +74,10 @@
   }
   .mainMsg{
     font-size:13pt;
+  }
+  .subSection{
+    display:flex;
+    align-items: center;
   }
 }
 /*PC:ウィンドウ幅が767px以上の場合に適用*/

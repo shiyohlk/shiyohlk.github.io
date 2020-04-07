@@ -1,3 +1,5 @@
+
+
 .txt{
    color:#666666;
 }
@@ -18,9 +20,6 @@
 }
 .ImgBar{
   text-align:right;
-}
-.ImgBar img{
-  margin-right:20px;
 }
 .subSection li{
   padding-top:20px;
@@ -47,11 +46,11 @@ ul.list li{
 }
 
 ul.sublist{
-  padding-left:10%;
+  padding-left:8%;
 	list-style-image: url(../images/icon_sublist.png);
 }
 ul.sublist li {
-  font-size:12pt;  
+  font-size:12pt;
 }
  /*ul li{
   padding-top:10px;
@@ -60,25 +59,12 @@ ul.sublist li {
 }*/
 .color1{
   background-color:rgb(161, 119, 71,0.3);
+   box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.color1 .description{
-  padding:40px 150px 100px 150px;
-}
-.color2 .description{
-  text-align: center;
-  padding:20px 30px 40px 30px;
-  text-decoration: underline;
-}
-.color2 img{
-  margin-top:20px;
-  width:70%;
-  height:auto;
-}
+
 .color3 img{
   width:80%;
-}
-.merit{
-  padding:20px 40px 20px 40px;
+   box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .color3{
   background-color: #e9e9f0;
@@ -89,22 +75,73 @@ ul.sublist li {
 .sublist div{
   margin-top:10px;
 }
-.sublist figure{
+.imgSection div {
+  width:100%;
   text-align:center;
 }
-.center{
-    align-items: center;
-    margin-left:15%;
+.imgSection {
+  padding-top: 10px;
 }
-.imgSection{
-  display:flex;
-}
+
 /*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px){
 
-
+figure{
+  margin-inline-start: 0px;
+}
+ul{
+  padding-inline-start: 20px;
+}
+.msb_mainImg{
+  display: none;
+}
+.ImgBar img{
+      width:100%;
+      height:256px;
+    }
+.color1 .description{
+  padding:10px 50px 30px 60px;
+  }
+  .color2 img{
+    margin-top:20px;
+    width:100%;
+    height:auto;
+  }
+  .color2 .description{
+    padding-right:20px;
+    text-decoration: underline;
+  }
+  .merit{
+    padding:0px 30px 0px 30px;
+  }
 }
 /*PC:ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 767px) {
-
+    .msb_main3{
+      display:none;
+    }
+    .color1 .description{
+      padding:40px 150px 100px 150px;
+    }
+    .ImgBar img{
+      margin-right:20px;
+    }
+    .color2 img{
+      margin-top:20px;
+      width:70%;
+      height:auto;
+    }
+    .color2 .description{
+      padding:20px 20px 20px 20px;
+      text-decoration: underline;
+    }
+    .merit{
+      padding:20px 40px 20px 40px;
+    }
+    .imgSection{
+      display:flex;
+    }
+    .center{
+        align-items: center;
+    }
 }
