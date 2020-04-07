@@ -1,8 +1,4 @@
-.items{
-  padding:30px;
-  display:flex;
-  justify-content: center;
-}
+
 .item{
   background-color: #fffaf0;
   margin:10px 1px 10px 1px;
@@ -23,14 +19,13 @@
   text-align: center;
 }
 .homeBar{
+position: relative;
 text-align: center;
 }
 .ImgBar{
   text-align:center;
 }
-.ImgBar img{
-  margin-right:20px;
-}
+
 .subSection{
   margin:20px;
   padding:20px;
@@ -101,10 +96,44 @@ ul.sublist2{
 }
 /*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px){
-
-
+  .mainpc{
+    display:none;
+  }
+  .homeBar img{
+    width:100%;
+  }
+  .mainTitle{
+    position:absolute;
+    top:45%;
+    left:10%;
+  }
+  .mainTitle .mainphone{
+    width:70%;
+  }
+  .items{
+    padding: 10px;
+  }
+  .item{
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  #oemflow img{
+    width:100%;
+    height:auto;
+  }
 }
 /*PC:ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 767px) {
+  .ImgBar img{
+    margin-right:20px;
+  }
+  .mainphone{
+    display: none;
+  }
+  .items{
+    padding:30px;
+    display:flex;
+    justify-content: center;
+
+  }
 
 }
