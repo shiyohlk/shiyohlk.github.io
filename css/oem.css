@@ -4,6 +4,8 @@
   margin:10px 1px 10px 1px;
   padding:30px;
   border:2px solid #f2f2f2;
+  box-shadow:2px 2px 2px 2px rgba(242, 242, 242, 0.2);
+
 }
 .txt{
    color:#666666;
@@ -29,18 +31,28 @@
 }
 .color1{
   border:1px solid #93278f;
+  box-shadow:2px 2px 2px 2px rgba(147, 39, 143, 0.2);
+
 }
 .color2{
   border:1px solid #fbb03b;
+  box-shadow:2px 2px 2px 2px rgba(251, 176, 59, 0.2);
+
 }
 .color3{
   border:1px solid #2e3192;
+  box-shadow:2px 2px 2px 2px rgba(46, 49, 146, 0.2);
+
 }
 .color4{
   border:1px solid #0071bc;
+  box-shadow:2px 2px 2px 2px rgba(0, 113, 188, 0.2);
+
 }
 .color5{
   background-color:#dbebc4;
+  box-shadow:2px 2px 2px 2px rgba(219, 235, 196, 0.5);
+
 }
 .intro{
   padding-left:15%;
