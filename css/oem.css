@@ -18,10 +18,7 @@
 .txt-center{
   text-align: center;
 }
-.homeBar{
-position: relative;
-text-align: center;
-}
+
 .ImgBar{
   text-align:center;
 }
@@ -96,6 +93,10 @@ ul.sublist2{
 }
 /*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px){
+  .homeBar{
+  position: relative;
+  text-align: center;
+  }
   .mainpc{
     display:none;
   }
@@ -123,8 +124,13 @@ ul.sublist2{
 }
 /*PC:ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 767px) {
-  .ImgBar img{
-    margin-right:20px;
+  .imgBar {
+    position:relative;
+    width:100%;
+  }
+  .mainpc{
+    width:100%;
+    height:auto;
   }
   .mainphone{
     display: none;
