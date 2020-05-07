@@ -9,7 +9,7 @@ body{
 a,a:visited a:active{
   color:inherit;
 }
-.nav-item a::after {
+/*.nav-item a::after {
   content: "s";
   position: absolute;
   bottom: 0;
@@ -21,7 +21,7 @@ a,a:visited a:active{
 }
 .nav-item > a:hover::after {
   width: 100%;
-}
+}*/
 
 .dropdown:hover > .dropdown-menu{
   display:block;
