@@ -2,6 +2,8 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Comming Soon</title>
     <!--jQuery読み込み-->
     <script src="js/jquery.js"></script>
@@ -17,13 +19,16 @@
        height:700px;
        font-family : ヒラギノ明朝 ProN;
        color:#171818;
+       margin:0px;
       }
-      .container{
+      .box0{
         padding:0px;
+        margin:0px;
       }
     </style>
   </head>
   <body>
+    <div class="container-fluid box0">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" height="30" alt="">
@@ -61,11 +66,12 @@
         </ul>
       </div>
     </nav>
-      <div class="box row justify-content-center align-items-center">
+      <div class="row box justify-content-center align-items-center">
         <div class="text-center">
           <h1>Coming Soon...</h1><br>このページは近日公開予定です<br>
           <div class="spinner-grow text-warning" role="status"></div>
         </div>
+      </div>
       </div>
 
   </body>
