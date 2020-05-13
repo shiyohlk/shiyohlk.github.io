@@ -4,31 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Comming Soon</title>
+    <title>Coming Soon ...</title>
     <!--jQuery読み込み-->
     <script src="js/jquery.js"></script>
     <!--BootstrapのCSS読み込み-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--BootstrapのJSSの読み込み-->
     <script src="js/bootstrap.min.js"></script>
-    	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+
 
     <style>
-     .box{
-       position:relative;
-       height:700px;
-       font-family : ヒラギノ明朝 ProN;
-       color:#171818;
-       margin:0px;
-      }
-      .box0{
-        padding:0px;
+      html,body{
+        height:100%;
         margin:0px;
+        padding:0px;
       }
+      .msg{
+        text-align:center;
+        font-size:12pt;
+        font-family : ヒラギノ明朝 ProN;
+      }
+      .content{
+        height:90%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+
     </style>
   </head>
   <body>
-    <div class="container-fluid box0">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" height="30" alt="">
@@ -66,13 +72,17 @@
         </ul>
       </div>
     </nav>
-      <div class="row box justify-content-center align-items-center">
-        <div class="text-center">
-          <h1>Coming Soon...</h1><br>このページは近日公開予定です<br>
-          <div class="spinner-grow text-warning" role="status"></div>
-        </div>
+
+    <div class="content">
+      <div class="msg"><span class="h2">Coming Soon...</span><br>
+      このページは近日公開予定です<br>
+      <div class="spinner-grow text-warning" role="status"></div>
       </div>
-      </div>
+    </div>
+    <footer id="footer" class="bg-light">
+      WorldSilver  ボタニカル染め
+      Copyright(c) 2020
+    </footer>
 
   </body>
 </html>
