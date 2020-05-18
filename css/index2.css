@@ -1,4 +1,6 @@
-
+.selected{
+  text-decoration: underline!important;
+}
 .homeBar{
   position: relative;
   background-color: rgb(0,42,5,0.4);
@@ -15,12 +17,15 @@
 .mainMsg{
   color:#666666;
   padding:60px;
+  font-size:20px;
 }
-.subSection{
+
+.bar{
   display:flex;
   flex-wrap:wrap;
 }
-.subSection img{
+.bar:nth-child(even){
+  flex-direction: row-reverse;
 }
 .link{
   text-decoration: underline;
@@ -31,9 +36,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.txt{
- color:#666666;
 }
 /*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px){
@@ -61,15 +63,12 @@
   .intro{
     font-size:10pt;
   }
-  .mainMsg{
-    font-size:13pt;
-  }
 }
 /*PC:ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 767px) {
-  .pc{
+  /* .pc{
     width:100%;
-  }
+  } */
   .phone{
     display: none;
   }

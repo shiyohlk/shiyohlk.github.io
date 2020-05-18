@@ -29,21 +29,20 @@
 	<!--effect -->
 	<script type="text/javascript">
 		$(function(){
+
 			//scroll
-			$(window).scroll(function() {
-			  let scrollTop = $(window).scrollTop(); // スクロール上部の位置
-			  let areaTop = $(".mainMsg").offset().top; // 対象エリアの上部の位置
-			  let areaBottom = areaTop + $(".mainMsg").innerHeight(); // 対象エリアの下部の位置
-				console.log(areaTop);
-				console.log(scrollTop);
-			  if (scrollTop > areaTop && scrollTop < areaBottom) {
-					console.log("is in");
-					$(".slide").show("slide");
-			    $(".mainMsg").addClass("is-in"); // スクロールが対象エリアに入った場合
-			  } else {
-			    //$(".mainMsg").removeClass("is-in"); // スクロールが対象エリアから出ている場合
-			  }
-			});
+			// $(window).scroll(function() {
+			//   let scrollTop = $(window).scrollTop(); // スクロール上部の位置
+			//   let areaTop = $(".mainMsg").offset().top; // 対象エリアの上部の位置
+			//   let areaBottom = areaTop + $(".mainMsg").innerHeight(); // 対象エリアの下部の位置
+			// 	console.log(areaTop);
+			// 	console.log(scrollTop);
+			//   if (scrollTop > areaTop && scrollTop < areaBottom) {
+			// 		// スクロールが対象エリアに入った場合
+			//   } else {
+			//   // スクロールが対象エリアから出ている場合
+			//   }
+			// });
 		});
 	</script>
 
@@ -52,7 +51,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="index.html">
 	    <img src="images/logo.png" height="30" alt="">
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,20 +104,26 @@
 		</div>
 		<div class="pc">
 			<div class="subSection">
+				<div class="bar">
 				<img src="images/bota_link.png">
 				<div class="txtSec">
-					<div class="txt link h3"><a href="msbdye.html">Botanical MSB Natrual Dyeとは</a></div>
-					<div class="txt intro">多品種の植物染料を使用することで希望色に近い表現ができます</div>
+					<div class="link h3"><a href="msbdye.html">Botanical MSB Natrual Dyeとは</a></div>
+					<div class="">多品種の植物染料を使用することで希望色に近い表現ができます</div>
 				</div>
+				</div>
+				<div class="bar">
 					<img  src="images/order_link.png">
 				<div class="txtSec">
-					<div class="txt link h3"><a href="oem.html#oemflow">ご依頼の流れ</a></div>
-					<div class="txt intro">OEM取引の流れついて解説いたします</div>
+					<div class="link h3"><a href="oem.html#oemflow">ご依頼の流れ</a></div>
+					<div class="">OEM取引の流れついて解説いたします</div>
 				</div>
+				</div>
+				<div class="bar">
 				<img src="images/process_link.png">
 				<div class="txtSec">
-					<div class="txt link h3"><a href="oem.html">OEM サービス</a></div>
-					<div class="txt intro">提供しているOEMサービスを紹介いたします</div>
+					<div class="link h3"><a href="oem.html">OEM サービス</a></div>
+					<div class="">提供しているOEMサービスを紹介いたします</div>
+				</div>
 				</div>
 			</div>
 		</div>
