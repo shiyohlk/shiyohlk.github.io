@@ -2,8 +2,7 @@ html{
   box-sizing: border-box;
 }
 body{
-  font-family : ヒラギノ明朝 ProN;
-  font-size:12pt;
+  font-family : serif;
   color:#666666;
 }
 a,a:visited a:active{
@@ -38,13 +37,15 @@ a,a:visited a:active{
 }
 /*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px){
-
+  body{
+    font-size:10pt;
+  }
 
 }
 /*PC:ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 767px) {
   .mainSection{
-    margin:0px 250px 0 250px;
+    margin:0px 100px 0 100px;
   }
 
 }

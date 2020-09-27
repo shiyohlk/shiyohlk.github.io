@@ -1,23 +1,21 @@
-.selected{
-  text-decoration: underline!important;
-}
 .homeBar{
   position: relative;
-  background-color: rgb(0,42,5,0.4);
+  background-color: #edece6;
 }
 .mainTitle{
+  font:'Meiryo';
   color:#42210B;
   text-stroke: 0.1px #fff;
   -webkit-text-stroke: 0.1px #fff;
-  background-color: rgb(255,255,255,0.5);
+  text-shadow: -1px -4px 10px #c6c3b0;
 }
+
 .ImgBar,.mainMsg{
   text-align: center;
 }
 .mainMsg{
   color:#666666;
   padding:60px;
-  font-size:20px;
 }
 
 .bar{
@@ -39,45 +37,52 @@
 }
 /*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px){
+  .h3{
+    font-size:14pt;
+  }
   .mainSection img{
     height:auto;
     width:100%;
   }
-  .slide{
-    display:none;
+  .txtSec{
+    padding:10px 20px;
   }
   .mainTitle{
     font-size:20pt;
     position:absolute;
+    background-color:  rgba(255,255,255,0.7);
     top:40%;
     left:25%;
+  }
+  .mainMsg{
+    font-size:12pt;
   }
   .mainMsg .pad{
     display:block;
     padding-top:50px;
-    font-size:18pt;
-  }
-  .txt {
-    font-size:16pt;
-  }
-  .intro{
-    font-size:10pt;
+
   }
 }
 /*PC:ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 767px) {
-  /* .pc{
-    width:100%;
-  } */
-  .phone{
-    display: none;
-  }
-
   .mainTitle{
     font-size:36pt;
     writing-mode: vertical-rl;
     position:absolute;
-    top:5%;
+    top:10%;
     left:7%;
+  }
+  .homeBar .mainImg{
+    height:450px;
+  
+
+height:450px;
+
+  }
+  .mainMsg {
+    font-size:16pt;
+  }
+  .mainMsg .pad{
+    font-size:18pt;
   }
 }
