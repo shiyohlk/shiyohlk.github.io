@@ -1,4 +1,7 @@
-
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+}
 .color2 img{
   display:inline-inline-block;
   margin-top:30px;
@@ -78,14 +81,13 @@ ul.sublist li {
   width:100%;
   text-align:center;
 }
-.flex{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
-}
+
 
 /*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px){
+  .flex{
+      justify-content:center;
+  }
   .mainTitle .pc_title{
     display: none;
   }
@@ -138,7 +140,7 @@ ul{
 /*PC:ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 767px) {
   .material-list{
-    padding:100px;
+    padding:10px 100px 20px 100px ;
   }
   .subSection .txt-center{
     font-size:20px;
@@ -156,8 +158,12 @@ ul{
       display: none;
     }
     .subSection .description{
-      padding:40px 100px 40px 100px;
+      padding:20px 100px 10px 100px;
     }
+    .description2{
+      padding:10px 10px 10px 10px;
+    }
+
     .sub1 img,.sub1 .caption{
       margin:10px;
       width:40%;
@@ -177,5 +183,8 @@ ul{
     }*/
     .merit{
       padding:20px 40px 20px 40px;
+    }
+    .flex-center{
+        justify-content:center;
     }
 }
