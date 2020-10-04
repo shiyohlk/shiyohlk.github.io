@@ -1,0 +1,137 @@
+
+.txt{
+   color:#666666;
+}
+.txt-center{
+  text-align: center;
+  padding-top:10px;
+}
+
+.homeBar{
+  position: relative;
+  background-color: rgb(237,240,224,0.5);
+}
+
+
+.ImgBar{
+  text-align:right;
+}
+.subSection li{
+  padding-top:20px;
+  padding-right:20px;
+}
+
+ul{
+  list-style-position: inside;
+}
+
+ul.patent-list{
+  list-style-type: decimal;
+}
+ul.list li{
+  font-size:14pt;
+  text-decoration: underline;
+	list-style-position: inside;
+	list-style-image: url(../images/icon_list.png);
+}
+
+ul.sublist{
+  padding-left:8%;
+	list-style-image: url(../images/icon_sublist.png);
+}
+ul.sublist li {
+  font-size:12pt;
+}
+
+.color3 img{
+  width:80%;
+   box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.color3{
+  background-color: #e9e9f0;
+}
+.color2 .description,.color3 .description{
+    padding:10px 40px 10px 40px;
+}
+.sublist div{
+  margin-top:10px;
+}
+.imgSection div {
+  width:100%;
+  text-align:center;
+}
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+/*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
+@media screen and (max-width: 479px){
+
+.msb_mainImg{
+  display: none;
+}
+.color1 .description{
+  padding:10px 50px 30px 60px;
+  }
+img{
+    max-width: 100%;
+  }
+
+}
+/*PC:ウィンドウ幅が767px以上の場合に適用*/
+@media screen and (min-width: 767px) {
+  .subSection .description{
+    padding:20px 100px 10px 100px;
+  }
+  .mainTitle{
+    position:absolute;
+    top:35%;
+    left:5%;
+  }
+  .mainTitle img{
+    width:100%;
+  }
+  .subSection .txt-center{
+    font-size:20px;
+  }
+  .subSection .txt-center{
+    margin:80px;
+  }
+  .imgSection .phone{
+    display:none;
+  }
+    .msb_main3{
+      display:none;
+    }
+    .color1 .company-list{
+          padding:0px 100px 20px 100px ;
+          text-align:center;
+
+    }
+    .color1 .company-list img{
+      width:900px;
+    }
+    .sub1 img,.sub1 .caption{
+      margin:10px;
+      width:40%;
+      height:auto;
+    }
+    .sub2 img {
+      height:100%;
+      width:auto;
+      margin:10px;
+    }
+    .ImgBar img{
+      margin-right:20px;
+    }
+    .subSection .description{
+      padding:20px 100px 10px 100px;
+    }
+    .merit{
+      padding:20px 40px 20px 40px;
+    }
+    .color2 img{
+      width:400px;
+    }
+}
