@@ -37,11 +37,11 @@
   padding-top:20px;
   padding-right:20px;
 }
-.subSection span{
+/*.subSection span{
   text-decoration: underline;
   color:#42210b;
   font-weight:bold;
-}
+}*/
 ul{
   list-style-position: inside;
 }
@@ -52,6 +52,7 @@ ul.list li{
 	list-style-position: inside;
 	list-style-image: url(../images/icon_list.png);
 }
+
 
 ul.sublist{
   padding-left:8%;
@@ -81,7 +82,13 @@ ul.sublist li {
   width:100%;
   text-align:center;
 }
-
+.other-color a{
+  text-decoration: underline;
+}
+.other-color a:hover{
+  font-weight: bold;
+  color:black;
+}
 
 /*Phone:ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px){
